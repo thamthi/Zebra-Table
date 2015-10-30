@@ -1,0 +1,92 @@
+@media screen and (min-width:600px) and (max-width: 1500px) {
+    
+.responsive {  
+    width:100%; 
+}
+    
+.tablewrapper{
+    margin:0 10% 0 10%;    
+}
+
+.empty{
+    padding:20px;   
+}
+    
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+caption {
+    font-family: serif;
+    color: #5145FF;
+    text-align: center;
+    background-color: #FFCBA6;
+}
+
+body {
+    font-family: sans-serif;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid grey;
+    margin: 0;
+
+}
+
+th {
+    border: 1px solid grey;
+
+    font-weight: bold;
+    vertical-align: top;
+}
+
+li {
+    list-style-type: none;
+}
+
+tr:nth-child(even) {
+    background-color: hsla(88, 100%, 25%, 0.3);
+}
+
+tr:nth-child(odd) {
+    background-color: hsla(120, 100%, 50%, 0.3);
+}
+
+table {
+    overflow: hidden;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    text-align: center;
+
+}
+
+tr:hover {
+    background-color: #ffa;
+}
+
+td,
+th {
+
+    position: relative;
+}
+
+td:hover::after,
+th:hover::after {
+    content: "";
+    position: absolute;
+    background-color: #ffa;
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+    
+}
